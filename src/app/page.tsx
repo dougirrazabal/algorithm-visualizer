@@ -1,8 +1,14 @@
+"use server";
 
-export default function Home() {
+import Link from "next/link";
+import { JSX } from "react";
+
+export default async function Home(): Promise<JSX.Element> {
   return (
     <div className="min-h-screen">
-      <main><h1>Hello World</h1></main>
+      <main>
+        <Link href="/algorithms/binary-search">Binary Search</Link>
+      </main>
     </div>
   );
 }
